@@ -20,7 +20,7 @@ const Home = ({ onProductClick }) => {
     const savedCart = localStorage.getItem('cart');
     if (savedCart) setCart(JSON.parse(savedCart));
 
-    fetch('https://script.google.com/macros/s/AKfycbyRd3ap-1TIcD1ICL6GY28G36L7AFcSJhSU0CyPPz-7UAexGeYaAy3GvzpiD6pliDdMWQ/exec')
+    fetch('https://script.google.com/macros/s/AKfycbwkMfQ036F7zIU9OXsKsHQP_hqXLy-YkHXFQsS119t3q2Y2Y2KZ9lQ7zQ61b2-Ju7Ofiw/exec')
       .then(res => res.json())
       .then(data => setProducts(data));
   }, []);
